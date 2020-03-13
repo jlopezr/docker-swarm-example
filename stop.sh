@@ -14,6 +14,6 @@ docker-machine stop host1
 docker-machine stop host2
 docker-machine stop host3
 
-docker-machine rm host1
-docker-machine rm host2
-docker-machine rm host3
+docker-machine rm -y host1
+docker-machine rm -y host2
+docker-machine rm -y host3
