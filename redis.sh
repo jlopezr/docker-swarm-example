@@ -20,9 +20,6 @@ EOF
 
 # docker service ps redis
 
-# https://stackoverflow.com/questions/44724497/what-is-overlay-network-and-how-does-dns-resolution-work
-# https://www.haproxy.com/blog/haproxy-on-docker-swarm-load-balancing-and-dns-service-discovery/
-
 # Drain a node (mark as unavailable)
 docker-machine ssh host1 << EOF
 docker node update --availability drain host2

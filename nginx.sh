@@ -11,3 +11,7 @@ docker service create \
   --replicas 2 \
   nginx
 EOF
+
+# https://docs.docker.com/engine/swarm/ingress/
+
+# https://docs.docker.com/network/overlay/#encrypt-traffic-on-an-overlay-network
