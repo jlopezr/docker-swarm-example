@@ -1,0 +1,14 @@
+version: ‘3’
+
+services:
+  rs1:
+    image: mongo:3.2
+    command: mongod — replSet “rs0”
+  rs2:
+    image: mongo:3.2
+    command: mongod — replSet “rs0”
+  rs3:
+    image: mongo:3.2
+    command: mongod — replSet “rs0”
+  rs:
+    image: lucj/mongors

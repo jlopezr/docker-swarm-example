@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     image: ${REGISTRY_IP:-127.0.0.1}:5000/stackdemo
-    build: ./stackdemo
+    build: ./app
     ports:
       - "8000:8000"
   redis:
