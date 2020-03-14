@@ -35,3 +35,9 @@ docker swarm join \
   --token $TOKEN \
   $IP_HOST1:2377
 EOF
+
+# Start registry for compose examples
+docker-machine ssh host1 << EOF
+docker service create --name registry --publish published=5000,target=5000 registry:2
+EOF
+
